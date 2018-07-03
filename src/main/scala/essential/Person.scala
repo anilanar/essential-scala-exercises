@@ -1,3 +1,5 @@
+package essential
+
 case class Person(
     val firstName: String,
     val lastName: String
@@ -25,8 +27,3 @@ object Stormtrooper
             case p => moveAlong(p.fullName)
         }
 }
-
-val anil = Person("Anil", "Anar")
-val luke = Person("Luke Skywalker")
-Stormtrooper.inspect(anil)
-Stormtrooper.inspect(luke)

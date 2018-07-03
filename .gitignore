@@ -1,2 +1,5 @@
+/target
+/project/target
+/.ensime_cache
 *.class
 *.log

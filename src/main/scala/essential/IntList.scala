@@ -1,3 +1,5 @@
+package essential
+
 import scala.annotation.tailrec
 
 sealed trait IntList
@@ -32,9 +34,3 @@ sealed trait IntList
 }
 final case object End extends IntList
 final case class Pair(head: Int, tail: IntList) extends IntList
-
-val ll = Pair(1, Pair(2, Pair(3, End)))
-ll.product
-ll.tail.length
-ll.double
-End.length

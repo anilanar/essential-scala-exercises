@@ -1,3 +1,5 @@
+package essential.traffic
+
 sealed trait TrafficLight
 {
     def next = this match

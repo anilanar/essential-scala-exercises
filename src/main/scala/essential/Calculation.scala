@@ -1,8 +1,10 @@
+package essential.calculation
+
 sealed trait Calculation
 final case class Success(result: Int) extends Calculation
 final case class Failure(reason: String) extends Calculation
 
-object Calculator
+object Calculation
 {
     def +(c: Calculation, a: Int) = c match {
         case Success(b) => Success(a + b)
@@ -15,6 +17,3 @@ object Calculator
         case f => f
     }
 }
-
-Calculator./(Success(10), 0)
-Calculator./(Success(10), 2)

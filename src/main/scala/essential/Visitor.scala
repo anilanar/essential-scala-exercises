@@ -1,3 +1,5 @@
+package essential
+
 import java.util.Date
 
 sealed trait Visitor

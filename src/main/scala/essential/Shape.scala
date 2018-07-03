@@ -1,3 +1,5 @@
+package essential.shape
+
 sealed trait Shape
 {
     def sides: Int
@@ -72,6 +74,3 @@ object Draw
             case c => if (c.light) "light" else "dark"
         }
 }
-
-Draw(Square(5, Red))
-Draw(Circle(5, CustomColor(1.0, 0.5, 0.5)))

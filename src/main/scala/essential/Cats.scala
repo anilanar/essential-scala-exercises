@@ -1,3 +1,5 @@
+package essential
+
 trait Feline
 {
     val color: String
@@ -20,10 +22,6 @@ case class Panther(color: String) extends Feline
     val sound = "roar"
 }
 
-val oswald = Cat("black", "milk")
-val henderson = Cat("white", "chips")
-val miakaumi = Cat("orange", "cheese")
-
 object ChipShop {
     def willServe(cat: Cat): Boolean =
         cat match {
@@ -31,7 +29,3 @@ object ChipShop {
             case _ => false
         }
 }
-
-ChipShop.willServe(oswald)
-ChipShop.willServe(henderson)
-ChipShop.willServe(miakaumi)

@@ -1,3 +1,5 @@
+package essential
+
 case class Director(
     val firstName: String,
     val lastName: String,
@@ -44,11 +46,3 @@ object Dad
             case _ => 3.0
         }
 }
-
-
-val anil = new Director("Anil", "Anar", 1990)
-val anilsFilm = Film("Dark Hoax", 2020, 8.2, anil)
-val client = new Director("Client", "Eastwood", 1944)
-val gbu = new Film("Good, Bad & Ugly", 1972, 9.2, client)
-Dad.rate(anilsFilm)
-Dad.rate(gbu)
